@@ -1,0 +1,75 @@
+@use "../helpers/variables" as *;
+header {
+  padding: 8px 10px;
+  align-items: center;
+  height: 60px;
+  background: #dedede;
+  margin-top: 51px;
+  font: {
+    size: 18px;
+  }
+  .navs {
+    ul {
+      padding: 0;
+      padding-right: 70px;
+      @media (max-width: 1055px) {
+        padding-right: 20px;
+        gap: 32px;
+      }
+      padding-top: 10px;
+      gap: 64px;
+      font-weight: 300;
+      li {
+        a {
+          transition: all 0.3s ease;
+
+          text-decoration: none;
+          color: $text-black;
+        }
+        width: 108px;
+        height: 41px;
+        text-align: center;
+        border-radius: 25px;
+        display: grid;
+        place-content: center;
+        transition: all 0.3s ease;
+        &:hover {
+          a {
+            transform: scale(1.3);
+            color: $skin-color;
+          }
+        }
+        &.active {
+          background: $active-color;
+        }
+      }
+    }
+    .nav-toggler {
+      box-sizing: border-box;
+      margin-right: 12px;
+      background: $skin-color;
+      color: #ffff;
+      width: 60px;
+      line-height: 60px;
+      text-align: center;
+      font-size: 2rem;
+      height: 60px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      &:hover {
+        color: #ffff;
+        background: $active-color;
+      }
+    }
+  }
+  .logo {
+    padding-left: 70px;
+    @media (max-width: 1055px) {
+      padding-left: 20px;
+    }
+    .logo-img {
+      width: 150px;
+    }
+  }
+}

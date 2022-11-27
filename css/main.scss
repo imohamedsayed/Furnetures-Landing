@@ -1,0 +1,6 @@
+@use "./layout/_header.scss";
+@use "./layout/sidebar";
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;700;900&display=swap");
+body {
+  font-family: cairo, sans-serif;
+}
