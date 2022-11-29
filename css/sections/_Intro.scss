@@ -1,0 +1,16 @@
+@use "../helpers/variables" as *;
+
+.intro {
+  gap: 0 !important;
+  .intro-content {
+    height: 100vh;
+  }
+  .intro-text {
+    padding-right: 100px;
+    width: 40%;
+    h1 {
+      font-size: 4.2rem;
+      font-weight: bold;
+    }
+  }
+}

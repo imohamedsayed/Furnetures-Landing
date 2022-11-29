@@ -16,7 +16,13 @@
   </head>
   <body>
     <!--Start Header-->
-    <header class="d-flex justify-content-between sticky-top" dir="rtl">
+    <header class="d-flex justify-content-between" dir="rtl">
+      <div class="logo d-flex">
+        <div class="nav-toggler d-block d-md-none">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <img src="./images/logo_01.png" class="img-fluid logo-img" alt="" />
+      </div>
       <div class="navs">
         <ul class="list-unstyled d-flex align-items-center d-none d-md-flex">
           <li class="active"><a href="#">الرئيسية</a></li>
@@ -24,12 +30,6 @@
           <li><a href="#">الخدمات</a></li>
           <li><a href="#">تواصل معنا</a></li>
         </ul>
-        <div class="nav-toggler d-block d-md-none">
-          <i class="fa-solid fa-bars"></i>
-        </div>
-      </div>
-      <div class="logo">
-        <img src="./images/logo_01.png" class="img-fluid logo-img" alt="" />
       </div>
     </header>
     <div class="sideBar d-flex d-md-none">
@@ -38,6 +38,20 @@
     </div>
     <!--End Header-->
     <!--Start Intro-->
+    <section class="intro" id="section1">
+      <div
+        class="intro-content d-flex align-items-center justify-content-between gap-none"
+        dir="rtl"
+      >
+        <div class="intro-text">
+          <h1>نوفر لك نقل امن لكل ممتلكاتك</h1>
+          <button class="btn">اتصل بنا الان</button>
+        </div>
+        <div class="img">
+          <img src="./images/landing.png" class="img-fluid" alt="" />
+        </div>
+      </div>
+    </section>
     <!--End Intro-->
 
     <!--JS Files-->
