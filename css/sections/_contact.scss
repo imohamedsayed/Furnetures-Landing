@@ -3,25 +3,32 @@
 .contact {
   margin-top: 100px;
   min-height: 100vh;
+  overflow: hidden;
   @media (max-width: 972px) {
     margin-bottom: 100px;
   }
   position: relative;
   .contact-img {
     position: absolute;
+    z-index: 3;
     top: 0;
-    right: 0;
-    @media (max-width: 768px) {
-      top: -125px;
+    right: -500px;
+    transition: all 0.3s ease-out;
+    &.disp {
+      right: 0;
     }
+
     @media (max-width: 1181px) {
-      top: -125px;
+      top: 4px;
     }
   }
   .contact-content {
     padding-top: 15vh;
+    @media (max-width: 1181px) {
+      padding-top: 34vh;
+    }
     h1 {
-      margin-bottom: 300px;
+      margin-bottom: 200px;
       font-weight: 700;
       font-size: 35px;
       line-height: 40px;
@@ -35,6 +42,11 @@
     }
     form {
       width: 100%;
+      opacity: 0;
+      transition: all 0.8s ease;
+      &.disp {
+        opacity: 1;
+      }
       .d-flex {
         align-items: center;
         justify-content: space-between;
@@ -51,6 +63,31 @@
           }
         }
         .right {
+          width: 100%;
+          .input-wrapper {
+            position: relative;
+            span {
+              position: absolute;
+              top: 30px;
+              right: 20px;
+              font-size: 20px;
+              color: #888;
+              pointer-events: none;
+              font-weight: 600;
+              transition: all 0.3s ease-out;
+            }
+            input:focus {
+              border: none;
+              outline: 2px solid $skin-color;
+            }
+            input:focus + span {
+              top: 5px;
+              right: 10px;
+              font-size: 15px;
+              padding: 0 10px;
+              background: #fff;
+            }
+          }
           input {
             width: 100%;
             margin: 20px 0;
@@ -72,6 +109,10 @@
             border: 2px solid #ff8024;
             border-radius: 10px;
             padding: 20px;
+            transition: all 0.3s ease;
+            &:focus {
+              transform: scale(1.05);
+            }
           }
         }
       }

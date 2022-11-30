@@ -16,10 +16,7 @@
   </head>
   <body>
     <!--Start Header-->
-    <header
-      class="d-flex justify-content-between sticky-top scrolled"
-      dir="rtl"
-    >
+    <header class="d-flex justify-content-between sticky-top" dir="rtl">
       <div class="logo d-flex">
         <div class="nav-toggler d-block d-md-none">
           <i class="fa-solid fa-bars"></i>
@@ -49,7 +46,7 @@
         <div class="overlay"></div>
         <div class="intro-text">
           <h1>نوفر لك نقل آمن لكل ممتلكاتك</h1>
-          <button class="btn">اتصل بنا الان</button>
+          <button class="btn" onclick="navTo('section4')">اتصل بنا الان</button>
         </div>
         <div class="img">
           <img src="./images/landing.png" class="img-fluid" alt="" />
@@ -164,9 +161,18 @@
           <form>
             <div class="d-flex">
               <div class="right">
-                <input type="text" placeholder="الاسم بالكامل" />
-                <input type="text" placeholder="رقم الموبايل" />
-                <input type="text" placeholder="العنوان" />
+                <div class="input-wrapper">
+                  <input type="text" />
+                  <span>الاسم بالكامل</span>
+                </div>
+                <div class="input-wrapper">
+                  <input type="text" />
+                  <span>رقم الموبايل</span>
+                </div>
+                <div class="input-wrapper">
+                  <input type="text" />
+                  <span>العنوان</span>
+                </div>
               </div>
               <div class="left">
                 <textarea

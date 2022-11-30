@@ -1,3 +1,12 @@
 $text-black: black;
 $skin-color: #ff8024;
 $active-color: #ffcca8;
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

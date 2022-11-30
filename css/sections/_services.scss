@@ -1,7 +1,7 @@
 @use "../helpers/variables" as *;
 
 .services {
-  margin-top: 245px;
+  margin-top: 445px !important;
   min-height: 80vh;
   padding-bottom: 12vh;
   position: relative !important;
@@ -15,6 +15,13 @@
     font-size: 35px;
   }
   .card {
+    bottom: -100px;
+    transition: all 0.3s ease-out;
+    opacity: 0;
+    &.disp {
+      bottom: 0px;
+      opacity: 1;
+    }
     .card-body {
       background: $skin-color;
       color: #fff;

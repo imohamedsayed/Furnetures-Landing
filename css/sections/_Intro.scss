@@ -26,6 +26,7 @@
     h1 {
       font-size: 4.2rem;
       font-weight: bold;
+      animation: fade-in 2s 1 ease;
       @media (max-width: 1241px) {
         font-size: 4rem;
       }
@@ -35,6 +36,9 @@
       @media (max-width: 1095px) {
         font-size: 3rem;
       }
+    }
+    button {
+      animation: fade-in 2s 0s 1 ease-out;
     }
   }
 

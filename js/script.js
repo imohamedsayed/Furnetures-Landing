@@ -35,7 +35,6 @@ window.addEventListener("scroll", () => {
 let navLinks = document.querySelectorAll("header li,.sideBar li, footer li"),
   sections = document.querySelectorAll("section");
 
-console.log(navLinks);
 navLinks.forEach((link) => {
   link.addEventListener("click", () => {
     navTo(link.dataset.index);
@@ -48,8 +47,26 @@ window.addEventListener("scroll", () => {
 
     if (sectionOffsets.top > -300 && sectionOffsets.top <= 150) {
       HandleActiveClasses(sec.id);
+      if (sec.id == "section4") {
+        document.querySelector("#section4 .contact-img").classList.add("disp");
+        document.querySelector("#section4 form").classList.add("disp");
+      }
     }
   });
+
+  //animations
+
+  if (scrollY >= 330) {
+    document.querySelector("#section2 .about-content").classList.add("disp");
+  }
+  if (scrollY >= 800) {
+    document.querySelector("#section2 .img img").classList.add("img-disp");
+  }
+
+  if (scrollY > 1488) {
+    let cards = document.querySelectorAll("#section3 .card");
+    cards.forEach((card) => card.classList.add("disp"));
+  }
 });
 
 function HandleActiveClasses(sectionId) {
