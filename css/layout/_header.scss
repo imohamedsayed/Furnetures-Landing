@@ -3,23 +3,44 @@ header {
   padding: 8px 10px;
   align-items: center;
   height: 60px;
-  background: #dedede;
-  margin-top: 51px;
+  width: 100%;
+  margin-top: 50px !important;
+  transition: all 0.4s ease-out;
+  &.scrolled {
+    background: #c3c3c3ab;
+    backdrop-filter: blur(3px);
+    box-shadow: 1px 1px 1px 1px rgba($color: #000000, $alpha: 0.2);
+  }
+  @media (max-width: 792px) {
+    padding-right: 0px;
+  }
+  @media (max-width: 972px) {
+    position: fixed !important;
+    top: 0 !important;
+    margin-top: 0px !important;
+    padding: 20px 0;
+    background: #cdcdcd80;
+    backdrop-filter: blur(3px);
+    box-shadow: 1px 1px 1px 1px rgba($color: #000000, $alpha: 0.2);
+  }
+  @media (max-width: 972px) {
+  }
   font: {
     size: 18px;
   }
   .navs {
     ul {
       padding: 0;
-      padding-right: 70px;
+      padding-left: 70px;
       @media (max-width: 1055px) {
-        padding-right: 20px;
+        padding-left: 20px;
         gap: 32px;
       }
       padding-top: 10px;
       gap: 64px;
       font-weight: 300;
       li {
+        cursor: pointer;
         a {
           transition: all 0.3s ease;
 
@@ -44,6 +65,10 @@ header {
         }
       }
     }
+  }
+  .logo {
+    padding-right: 70px;
+    gap: 20px;
     .nav-toggler {
       box-sizing: border-box;
       margin-right: 12px;
@@ -62,11 +87,11 @@ header {
         background: $active-color;
       }
     }
-  }
-  .logo {
-    padding-left: 70px;
     @media (max-width: 1055px) {
-      padding-left: 20px;
+      padding-right: 20px;
+    }
+    @media (max-width: 768px) {
+      padding-right: 0;
     }
     .logo-img {
       width: 150px;

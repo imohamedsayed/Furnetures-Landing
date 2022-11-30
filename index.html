@@ -16,20 +16,23 @@
   </head>
   <body>
     <!--Start Header-->
-    <header class="d-flex justify-content-between sticky-top" dir="rtl">
-      <div class="navs">
-        <ul class="list-unstyled d-flex align-items-center d-none d-md-flex">
-          <li class="active"><a href="#">الرئيسية</a></li>
-          <li><a href="#">من نحن ؟</a></li>
-          <li><a href="#">الخدمات</a></li>
-          <li><a href="#">تواصل معنا</a></li>
-        </ul>
+    <header
+      class="d-flex justify-content-between sticky-top scrolled"
+      dir="rtl"
+    >
+      <div class="logo d-flex">
         <div class="nav-toggler d-block d-md-none">
           <i class="fa-solid fa-bars"></i>
         </div>
-      </div>
-      <div class="logo">
         <img src="./images/logo_01.png" class="img-fluid logo-img" alt="" />
+      </div>
+      <div class="navs">
+        <ul class="list-unstyled d-flex align-items-center d-none d-md-flex">
+          <li class="active" data-index="section1"><a>الرئيسية</a></li>
+          <li data-index="section2"><a>من نحن ؟</a></li>
+          <li data-index="section3"><a>الخدمات</a></li>
+          <li data-index="section4"><a>تواصل معنا</a></li>
+        </ul>
       </div>
     </header>
     <div class="sideBar d-flex d-md-none">
@@ -38,8 +41,193 @@
     </div>
     <!--End Header-->
     <!--Start Intro-->
+    <section class="intro" id="section1">
+      <div
+        class="intro-content d-flex align-items-center justify-content-between gap-none"
+        dir="rtl"
+      >
+        <div class="overlay"></div>
+        <div class="intro-text">
+          <h1>نوفر لك نقل آمن لكل ممتلكاتك</h1>
+          <button class="btn">اتصل بنا الان</button>
+        </div>
+        <div class="img">
+          <img src="./images/landing.png" class="img-fluid" alt="" />
+        </div>
+      </div>
+    </section>
     <!--End Intro-->
-
+    <!--Start About-->
+    <section class="about" id="section2">
+      <div
+        class="d-flex justify-content-between flex-lg-row flex-column text-lg-end text-center"
+        dir="rtl"
+      >
+        <div class="about-content" dir="rtl">
+          <h1>من نحن؟</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore .
+          </p>
+        </div>
+        <div class="img">
+          <img src="./images/Group.png" class="img-fluid" alt="" />
+        </div>
+      </div>
+    </section>
+    <!--End About-->
+    <!--Start Services-->
+    <section class="services" id="section3">
+      <h1 class="text-center mb-5">الخدمات</h1>
+      <div class="container">
+        <div class="row" dir="rtl">
+          <div class="col-lg-4 col-md-6 col-12 mb-5">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="./images/ser1.png"
+                alt="Card image cap"
+              />
+              <div class="card-body" dir="rtl">
+                <h4 class="text-center mb-3">احصل علي خدمات عالية الجودة</h4>
+                <p class="card-text">
+                  احصل على خدمات عالية الجودة لاتخاذ قرارك بثقة، يمكنك التحقق من
+                  جودة خدمات مقدم الخدمة عبر قراءة تقييمات حقيقية لعملاء سبق
+                  وتعاملوا معه.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12 mb-5">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="./images/ser2.png"
+                alt="Card image cap"
+              />
+              <div class="card-body" dir="rtl">
+                <h4 class="text-center mb-3">وفر وقتك</h4>
+                <p class="card-text">
+                  وفر وقتك لا تضيّع وقتك في التحقق من مراجع الأصدقاء والعائلة.
+                  احصل على عروض مخصصة للخدمة التي تريدها عبر الإنترنت، واحتفظ
+                  بوقتك لقضائه مع أحبائك.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12 mb-5">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="./images/ser3.png"
+                alt="Card image cap"
+              />
+              <div class="card-body" dir="rtl">
+                <h4 class="text-center mb-3">استخدمه ببساطة</h4>
+                <p class="card-text">
+                  استخدمه ببساطة خذ دقيقة من وقتك للإجابة على أسئلة مجهزة خصّيصا
+                  للخدمة التي تريدها وانجز مهامك بسهولة.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="custom-shape-divider-bottom-1669759724">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+    </section>
+    <!--End Services-->
+    <!--Start Contact-->
+    <section class="contact" id="section4">
+      <img src="./images/contact.png" class="contact-img" alt="" />
+      <div class="contact-content">
+        <h1 class="text-center">تواصل معنا</h1>
+        <div class="container contact-form" dir="rtl">
+          <form>
+            <div class="d-flex">
+              <div class="right">
+                <input type="text" placeholder="الاسم بالكامل" />
+                <input type="text" placeholder="رقم الموبايل" />
+                <input type="text" placeholder="العنوان" />
+              </div>
+              <div class="left">
+                <textarea
+                  name=""
+                  id=""
+                  placeholder="ضع قائمة بجميع الاشياء التى تريد نقلها (  الأثاث, الصناديق, الأمتعة و غيرها ) / هل المصعد أو الدرج مناسب لنقل الاثاث؟ هل هناك أى تفاصيل أخرى مهمة تود إضافتها."
+                ></textarea>
+              </div>
+            </div>
+            <div class="submit text-start mt-2">
+              <button>
+                ارسال
+                <i class="fa-solid fa-paper-plane me-1"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!--End Contact-->
+    <!--Start Footer-->
+    <footer>
+      <div class="custom-shape-divider-top-1669769273">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+      <div class="navs" dir="rtl">
+        <ul
+          class="list-unstyled d-flex justify-content-between align-items-center gap-5"
+        >
+          <li data-index="section1"><a>الرئيسية</a></li>
+          <li data-index="section2"><a>من نحن ؟</a></li>
+          <li data-index="section3"><a>الخدمات</a></li>
+          <li class="call-us" data-index="section4">
+            <a>اتصل بنا<i class="fa-solid fa-phone-volume me-3"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="socials">
+        <div class="social-links">
+          <a href="#" class="telephone"
+            ><span data-message="هاتفنا الان">
+              <i class="fa-solid fa-phone"></i></span
+          ></a>
+          <a href="#" class="whatsapp"
+            ><span data-message="راسلنا علي واتساب"
+              ><i class="fa-brands fa-whatsapp"></i></span
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <!--End Footer-->
     <!--JS Files-->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/all.min.js"></script>

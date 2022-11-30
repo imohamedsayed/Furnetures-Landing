@@ -1,0 +1,15 @@
+@use "../helpers/variables" as *;
+
+button {
+  background: $skin-color !important;
+  color: #fff !important;
+  padding: 10px 12px !important;
+  width: 188px;
+  border-radius: 15px !important;
+  font-weight: 600 !important;
+  transition: all 0.4s ease !important;
+  &:hover {
+    color: $skin-color !important;
+    background: #fff !important;
+  }
+}

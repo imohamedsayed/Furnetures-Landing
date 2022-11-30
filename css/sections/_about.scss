@@ -1,0 +1,39 @@
+@use "../helpers/variables" as *;
+
+.about {
+  margin-top: 245px;
+  gap: 50px;
+  justify-content: space-between;
+  .img {
+    width: 1660px;
+    flex: 0 0 50%;
+    max-width: 50%;
+    text-align: center;
+    @media (max-width: 992px) {
+      flex: 0 0 1;
+      max-width: 100%;
+      padding-left: 5rem;
+    }
+  }
+  .about-content {
+    padding-right: 100px;
+    h1 {
+      font-size: 35px;
+      font-weight: bold;
+    }
+    p {
+      line-height: 23px;
+      font-weight: 400;
+      font-size: 18px;
+    }
+    flex: 0 0 50%;
+    max-width: 50%;
+    @media (max-width: 992px) {
+      flex: 0 0 1;
+      max-width: 100%;
+      margin-bottom: 50px;
+      padding-left: 5rem;
+      padding-right: 5rem !important;
+    }
+  }
+}
