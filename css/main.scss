@@ -1,8 +1,31 @@
 @use "./layout/_header.scss";
-@use "./layout/sidebar";
-@use "./sections/Intro";
 @use "./components/button";
+@use "./layout/sidebar";
+@use "./layout/footer";
+@use "./sections/Intro";
+@use "./sections/about";
+@use "./sections/services";
+@use "./sections/contact";
+@use "./helpers/variables" as *;
+
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;700;900&display=swap");
 body {
   font-family: cairo, sans-serif;
+}
+body::-webkit-scrollbar {
+  width: 15px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: $skin-color;
+  border: 3px solid #fff;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: $active-color;
 }

@@ -1,0 +1,49 @@
+@use "../helpers/variables" as *;
+
+.services {
+  margin-top: 245px;
+  min-height: 80vh;
+  padding-bottom: 12vh;
+  position: relative !important;
+  background: linear-gradient(
+    180deg,
+    rgba(217, 217, 217, 0) 27.08%,
+    rgba(255, 110, 4, 0.24) 100%
+  );
+  h1 {
+    font-weight: 700;
+    font-size: 35px;
+  }
+  .card {
+    .card-body {
+      background: $skin-color;
+      color: #fff;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      padding: 40px 40px !important;
+      min-height: 220px !important;
+    }
+    border-radius: 10px;
+  }
+
+  .custom-shape-divider-bottom-1669759724 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+  }
+
+  .custom-shape-divider-bottom-1669759724 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 141px;
+  }
+
+  .custom-shape-divider-bottom-1669759724 .shape-fill {
+    fill: #ffffff;
+  }
+}

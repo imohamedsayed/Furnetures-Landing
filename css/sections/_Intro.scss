@@ -2,15 +2,62 @@
 
 .intro {
   gap: 0 !important;
+  position: relative;
   .intro-content {
-    height: 100vh;
+    height: calc(100vh - 60px - 50px);
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 0;
+    display: none;
   }
   .intro-text {
     padding-right: 100px;
     width: 40%;
+    z-index: 2;
+    @media (max-width: 1241px) {
+      padding-right: 30px;
+    }
     h1 {
       font-size: 4.2rem;
       font-weight: bold;
+      @media (max-width: 1241px) {
+        font-size: 4rem;
+      }
+      @media (max-width: 764px) {
+        font-size: 3rem;
+      }
+      @media (max-width: 1095px) {
+        font-size: 3rem;
+      }
     }
+  }
+
+  @media (max-width: 972px) {
+    .img {
+      display: none;
+    }
+    .overlay {
+      display: block !important;
+    }
+    .intro-text {
+      flex: 1;
+      background: #fffefe8a;
+      backdrop-filter: blur(4px);
+      border-radius: 10px;
+      padding: 40px;
+      margin-top: 30vh;
+    }
+
+    background: url("../../images/landing-res.jpeg") !important;
+    background-size: cover !important;
+  }
+  @media (max-width: 972px) {
+    height: 100vh;
   }
 }
